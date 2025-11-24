@@ -1,61 +1,76 @@
-import React from 'react'
+import React from "react";
 import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
-import { Button } from './ui/button';
+import { Button } from "./ui/button";
+import Link from "next/link";
 
 const Hero = () => {
   return (
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden px-4">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,hsl(199,89%,48%,0.1),transparent_50%)]" />
-      
+
       <div className="container mx-auto text-center z-10 animate-fade-in">
         <div className="mb-6">
           <span className="inline-block px-4 py-2 rounded-full bg-secondary text-sm font-medium mb-6">
             👋 Hoş geldiniz
           </span>
         </div>
-        
+
         <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-          Merhaba, Ben{" "}
-          <span className="gradient-text">Web Developer</span>
+          Merhaba, Ben <span className="gradient-text">Görkem Karagöl</span>
         </h1>
-        
+
         <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto">
           Modern ve kullanıcı dostu web uygulamaları geliştiriyorum.
           <br />
           Harika projeler için birlikte çalışalım!
         </p>
-        
+
         <div className="flex flex-wrap gap-4 justify-center mb-12">
-          <Button size="lg" className="hover-glow">
-            <Mail className="mr-2 h-5 w-5" />
-            İletişime Geç
-          </Button>
-          <Button size="lg" variant="secondary">
-            Projelerimi Gör
-          </Button>
+          <Link href="#contact">
+            <Button size="lg" className="hover-glow">
+              <Mail className="mr-2 h-5 w-5" />
+              İletişime Geç
+            </Button>
+          </Link>
+ 
+          <Link href="#projects">
+            <Button href="#contact" size="lg" variant="secondary">
+              Projelerimi Gör
+            </Button>
+          </Link>
         </div>
-        
+
         <div className="flex gap-4 justify-center">
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer" 
-             className="p-3 rounded-full bg-secondary hover:bg-accent transition-colors hover-glow">
+          <a
+            href="https://github.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-3 rounded-full bg-secondary hover:bg-accent transition-colors hover-glow"
+          >
             <Github className="h-5 w-5" />
           </a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"
-             className="p-3 rounded-full bg-secondary hover:bg-accent transition-colors hover-glow">
+          <a
+            href="https://linkedin.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-3 rounded-full bg-secondary hover:bg-accent transition-colors hover-glow"
+          >
             <Linkedin className="h-5 w-5" />
           </a>
-          <a href="mailto:hello@example.com"
-             className="p-3 rounded-full bg-secondary hover:bg-accent transition-colors hover-glow">
+          <a
+            href="mailto:hello@example.com"
+            className="p-3 rounded-full bg-secondary hover:bg-accent transition-colors hover-glow"
+          >
             <Mail className="h-5 w-5" />
           </a>
         </div>
       </div>
-      
+
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
         <ArrowDown className="h-6 w-6 text-muted-foreground" />
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;
