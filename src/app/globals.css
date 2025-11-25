@@ -1,4 +1,5 @@
 @import "tailwindcss";
+
 @import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
@@ -42,6 +43,7 @@
 }
 
 :root {
+  
   --background: hsl(222, 47%, 11%);
   --foreground: hsl(210, 40%, 98%);
 
@@ -91,14 +93,14 @@
   --shadow-glow: 0 0 40px hsl(199 89% 48% / 0.3);
   --shadow-card: 0 4px 20px hsl(0 0% 0% / 0.3);
 
---sidebar-background: #fafafa;          /* 0 0% 98% */
-  --sidebar-foreground: #43474f;          /* 240 5.3% 26.1% */
-  --sidebar-primary: #1a1a1a;             /* 240 5.9% 10% */
-  --sidebar-primary-foreground: #fafafa;  /* 0 0% 98% */
-  --sidebar-accent: #f5f5f5;              /* 240 4.8% 95.9% */
-  --sidebar-accent-foreground: #1a1a1a;   /* 240 5.9% 10% */
-  --sidebar-border: #e1e1e5;              /* 220 13% 91% */
-  --sidebar-ring: #00b8e6;  
+  --sidebar-background: #fafafa; /* 0 0% 98% */
+  --sidebar-foreground: #43474f; /* 240 5.3% 26.1% */
+  --sidebar-primary: #1a1a1a; /* 240 5.9% 10% */
+  --sidebar-primary-foreground: #fafafa; /* 0 0% 98% */
+  --sidebar-accent: #f5f5f5; /* 240 4.8% 95.9% */
+  --sidebar-accent-foreground: #1a1a1a; /* 240 5.9% 10% */
+  --sidebar-border: #e1e1e5; /* 220 13% 91% */
+  --sidebar-ring: #00b8e6;
   --gradient-primary: linear-gradient(
     135deg,
     hsl(199 89% 48%) 0%,
@@ -175,16 +177,51 @@
   }
 
   body {
+    font-family: var(--font-space-grotesk), sans-serif;
     @apply bg-background text-foreground;
     font-feature-settings: "rlig" 1, "calt" 1;
+    
   }
 
   html {
     scroll-behavior: smooth;
   }
+
+  .sticky-cursor {
+    width: 15px;
+    height: 15px;
+    background-color: hsl(199 89% 48%);
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none;
+    z-index: 9999;
+    mix-blend-mode: difference;
+  }
+  
+  
 }
 
 @layer utilities {
+  .avatar-glow {
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    user-select: none;
+  }
+
+  .avatar-glow::after {
+    content: "";
+    position: absolute;
+    inset: -6px;
+    border-radius: 50%;
+    background: radial-gradient(
+      circle,
+      hsl(76, 100%, 65%) 50%,
+      transparent 70%
+    );
+    filter: blur(12px);
+    z-index: -1;
+  }
   .gradient-text {
     @apply bg-gradient-to-r from-primary to-[hsl(217,91%,60%)] bg-clip-text text-transparent;
   }
@@ -200,4 +237,75 @@
   .hover-glow:hover {
     box-shadow: var(--shadow-glow);
   }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 2s ease-out forwards;
+  }
+
+  .animate-bounce {
+    animation: bounce 0.75s infinite;
+  }
+
+  @keyframes slide-in {
+    0% {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  .animate-slide-in {
+    animation: slide-in 0.4s ease-out;
+  }
+
+  /* Float (yavaş yukarı-aşağı) */
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-6px);
+    }
+  }
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  /* Accordion DOWN */
+  @keyframes accordion-down {
+    from {
+      height: 0;
+    }
+    to {
+      height: var(--radix-accordion-content-height);
+    }
+  }
+  .animate-accordion-down {
+    animation: accordion-down 0.25s ease-out;
+  }
+
+  /* Accordion UP */
+  @keyframes accordion-up {
+    from {
+      height: var(--radix-accordion-content-height);
+    }
+    to {
+      height: 0;
+    }
+  }
+  .animate-accordion-up {
+    animation: accordion-up 0.25s ease-out;
+  }
 }
+
