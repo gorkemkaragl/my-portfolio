@@ -2,14 +2,14 @@ import React from "react";
 import { Card } from "./ui/card";
 
 const skills = [
-  { name: "React", level: 95 },
-  { name: "TypeScript", level: 90 },
-  { name: "JavaScript", level: 95 },
-  { name: "HTML/CSS", level: 98 },
-  { name: "Tailwind CSS", level: 92 },
+  { name: "React", level: 75 },
+  { name: "Next.js", level: 75 },
+  { name: "TypeScript", level: 65 },
+  { name: "JavaScript", level: 75 },
+  { name: "HTML/CSS", level: 85 },
+  { name: "Tailwind CSS", level: 90 },
   { name: "Node.js", level: 85 },
-  { name: "Git", level: 88 },
-  { name: "REST APIs", level: 90 },
+  { name: "Git", level: 80 },
 ];
 
 const Skills = () => {
