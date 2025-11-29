@@ -20,6 +20,10 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata = {
+  icons: {
+    icon: "/rocket.png", // public/ klasörüne koyduğun favicon dosyası
+    shortcut: "/rocket.png", // tarayıcı shortcut için
+  },
   title: "Görkem Karagöl - Portfolio",
   description: "Görkem Karagöl'ün modern ve kullanıcı dostu portföy sitesi.",
 };
