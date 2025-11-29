@@ -9,6 +9,7 @@ import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import Lottie from "lottie-react";
 import loadingCat from "../../public/animations/loading-cat.json";
+import ScrollToTop from "@/components/ScrollToTop";
 
 const HomePage = () => {
   const [loading, setLoading] = useState(true);
@@ -39,6 +40,7 @@ const HomePage = () => {
           <Projects />
           <Contact />
           <Footer />
+          <ScrollToTop />
         </div>
       )}
     </>

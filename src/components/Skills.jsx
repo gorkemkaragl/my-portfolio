@@ -1,16 +1,6 @@
 import React from "react";
 import { Card } from "./ui/card";
-
-const skills = [
-  { name: "React", level: 75 },
-  { name: "Next.js", level: 75 },
-  { name: "TypeScript", level: 65 },
-  { name: "JavaScript", level: 75 },
-  { name: "HTML/CSS", level: 85 },
-  { name: "Tailwind CSS", level: 90 },
-  { name: "Node.js", level: 85 },
-  { name: "Git", level: 80 },
-];
+import { skills } from "@/data/skills";
 
 const Skills = () => {
   return (
@@ -35,7 +25,7 @@ const Skills = () => {
               </div>
               <div className="h-2 bg-secondary rounded-full overflow-hidden">
                 <div
-                  className="h-full bg-gradient-to-r from-primary to-[hsl(217,91%,60%)] rounded-full transition-all duration-1000 ease-out"
+                  className="h-full bg-linear-to-r from-primary to-[hsl(217,91%,60%)] rounded-full transition-all duration-1000 ease-out"
                   style={{ width: `${skill.level}%` }}
                 />
               </div>

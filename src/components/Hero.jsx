@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
+import { ArrowDown, Download, Github, Linkedin, Mail } from "lucide-react";
 import { Button } from "./ui/button";
 import Link from "next/link";
 import Lottie from "lottie-react";
@@ -10,6 +10,15 @@ import { Typewriter } from "react-simple-typewriter";
 import Image from "next/image";
 
 const Hero = () => {
+
+  const handleDownloadCV = () => {
+    const link = document.createElement('a');
+    link.href = '/CV2025.pdf';
+    link.download = 'Ozgecmis.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
   return (
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden px-4">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,hsl(199,89%,48%,0.1),transparent_50%)]" />
@@ -64,6 +73,13 @@ const Hero = () => {
               Projelerimi Gör
             </Button>
           </Link>
+
+          
+            <Button size="lg" variant="link" onClick={handleDownloadCV}>
+              <Download/>
+              CV'mi İndir
+            </Button>
+          
         </div>
 
         <div className="flex gap-4 justify-center">
