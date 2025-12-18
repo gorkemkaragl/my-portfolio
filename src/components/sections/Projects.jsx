@@ -6,8 +6,8 @@ import {
   CardDescription,
   CardHeader,
   CardTitle,
-} from "./ui/card";
-import { Button } from "./ui/button";
+} from "../ui/card";
+import { Button } from "../ui/button";
 import { ExternalLink, Github } from "lucide-react";
 
 const Projects = () => {

@@ -1,15 +1,11 @@
 "use client";
-
+import {Hero,About,Skills,Projects,Contact} from "@/components/sections"
 import React, { useEffect, useState } from "react";
-import Hero from "@/components/Hero";
-import About from "@/components/About";
-import Skills from "@/components/Skills";
-import Projects from "@/components/Projects";
-import Contact from "@/components/Contact";
-import Footer from "@/components/Footer";
+import Footer from "@/components/layout/Footer";
 import Lottie from "lottie-react";
 import loadingCat from "../../public/animations/loading-cat.json";
-import ScrollToTop from "@/components/ScrollToTop";
+import ScrollToTop from "@/components/common/ScrollToTop";
+import { SettingsSidebar } from "@/components/layout/SettingsSidebar";
 
 const HomePage = () => {
   const [loading, setLoading] = useState(true);
@@ -34,6 +30,7 @@ const HomePage = () => {
       ) : (
         // ASIL SAYFA
         <div className="min-h-screen">
+          <SettingsSidebar />
           <Hero />
           <About />
           <Skills />

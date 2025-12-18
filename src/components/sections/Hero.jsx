@@ -2,10 +2,10 @@
 
 import React from "react";
 import { ArrowDown, Download, Github, Linkedin, Mail } from "lucide-react";
-import { Button } from "./ui/button";
+import { Button } from "../ui/button";
 import Link from "next/link";
 import Lottie from "lottie-react";
-import rocket from "../../public/animations/rocket.json";
+import rocket from "@/../public/animations/rocket.json";
 import { Typewriter } from "react-simple-typewriter";
 import Image from "next/image";
 

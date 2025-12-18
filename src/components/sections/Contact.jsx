@@ -1,9 +1,9 @@
 import React from 'react'
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './ui/card'
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../ui/card'
 import { Mail, MapPin, Phone } from 'lucide-react'
-import { Input } from './ui/input'
-import { Textarea } from './ui/textarea'
-import { Button } from './ui/button'
+import { Input } from '../ui/input'
+import { Textarea } from '../ui/textarea'
+import { Button } from '../ui/button'
 
 const Contact = () => {
   return (
