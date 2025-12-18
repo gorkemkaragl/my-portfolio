@@ -1,6 +1,6 @@
 import { Geist, Geist_Mono, Space_Grotesk } from "next/font/google";
 import "./globals.css";
-import StickyCursor from "@/components/ui/StickyCursor";
+import StickyCursor from "@/components/common/StickyCursor";
 import { ThemeProvider } from "@/components/providers/theme-provider";
 
 const geistSans = Geist({
