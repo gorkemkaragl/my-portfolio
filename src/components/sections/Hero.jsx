@@ -9,12 +9,11 @@ import rocket from "@/../public/animations/rocket.json";
 import { Typewriter } from "react-simple-typewriter";
 import Image from "next/image";
 
-const Hero = () => {
-
+const Hero = ({ dict }) => {
   const handleDownloadCV = () => {
-    const link = document.createElement('a');
-    link.href = '/CV2025.pdf';
-    link.download = 'Ozgecmis.pdf';
+    const link = document.createElement("a");
+    link.href = "/CV2025.pdf";
+    link.download = "Ozgecmis.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -24,12 +23,10 @@ const Hero = () => {
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,hsl(199,89%,48%,0.1),transparent_50%)]" />
 
       <div className="container mx-auto text-center z-10 animate-fade-in">
-        
-        
-          <span className="inline-block px-4 py-2 rounded-full bg-secondary text-sm font-medium">
-            👋 Hoş geldiniz
-          </span>
-        
+        <span className="inline-block px-4 py-2 rounded-full bg-secondary text-sm font-medium">
+          {dict.hero.welcome}
+        </span>
+
         <div className="relative w-30 h-30 mx-auto avatar-glow">
           <Image
             src="/myPhoto.png"
@@ -49,13 +46,14 @@ const Hero = () => {
         />
 
         <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tigh select-none">
-          Merhaba, Ben <span className="gradient-text">Görkem Karagöl </span>
+          {dict.hero.title}{" "}
+          <span className="gradient-text">Görkem Karagöl </span>
         </h1>
 
         <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto select-none">
-          Modern ve kullanıcı dostu web uygulamaları geliştiriyorum.
+          {dict.hero.description1}
           <br />
-          Harika projeler için birlikte çalışalım!
+          {dict.hero.description2}
         </p>
         <div className="h-24 w-24 flex justify-center mx-auto mb-8">
           <Lottie animationData={rocket} loop={true} />
@@ -64,22 +62,20 @@ const Hero = () => {
           <Link href="#contact">
             <Button size="lg" className="hover-glow">
               <Mail className="mr-2 h-5 w-5" />
-              İletişime Geç
+              {dict.hero.contact}
             </Button>
           </Link>
 
           <Link href="#projects">
             <Button href="#contact" size="lg" variant="secondary">
-              Projelerimi Gör
+              {dict.hero.projects}
             </Button>
           </Link>
 
-          
-            <Button size="lg" variant="link" onClick={handleDownloadCV}>
-              <Download/>
-              CV'mi İndir
-            </Button>
-          
+          <Button size="lg" variant="link" onClick={handleDownloadCV}>
+            <Download />
+            {dict.hero.cv}
+          </Button>
         </div>
 
         <div className="flex gap-4 justify-center">

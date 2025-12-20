@@ -2,12 +2,12 @@ import React from "react";
 import { Card } from "../ui/card";
 import { skills } from "@/data/skills";
 
-const Skills = () => {
+const Skills = ({dict}) => {
   return (
     <section id="skills" className="py-24 px-4 bg-secondary/30">
       <div className="container mx-auto max-w-6xl">
         <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center">
-          <span className="gradient-text">Yetenekler</span>
+          <span className="gradient-text">{dict.skills.title}</span>
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

@@ -1,0 +1,46 @@
+{
+  "hero": {
+    "welcome":"👋 Hoş geldiniz",
+    "title": "Merhaba, Ben",
+    "description1": "Modern ve kullanıcı dostu web uygulamaları geliştiriyorum.",
+    "description2":"Harika projeler için birlikte çalışalım!",
+    "contact":"İletişime Geç",
+    "projects":"Projelerimi Gör",
+    "cv":"CV'mi İndir"
+  },
+  "about": {
+    "title": "Hakkımda",
+    "description1": "Merhaba! Ben tutkulu bir web developer'ım. Modern teknolojiler kullanarak kullanıcı deneyimini ön planda tutan web uygulamaları geliştiriyorum.",
+    "description2": "React, TypeScript ve modern frontend teknolojileri ile çalışmayı seviyorum. Her proje için en iyi çözümleri üretmeye ve sürekli kendimi geliştirmeye odaklanıyorum.",
+    "description3":"Kod yazmadığım zamanlarda yeni teknolojileri öğreniyor, açık kaynak projelere katkıda bulunuyor ve teknoloji topluluklarında aktif olarak yer alıyorum."
+  },
+  "skills": {
+    "title": "Yetenekler"
+  },
+  "projects": {
+    "title": "Projeler"
+  },
+  "contact": {
+    "title": "İletişim",
+    "contactMe": "Benimle İletişime Geçin",
+    "description":"Projeleriniz için benimle çalışmak ister misiniz? Hemen iletişime geçin!",
+    "messageMe":"Mesaj Gönderin",
+    "name":"Adınız",
+    "email":"E-posta Adresiniz",
+    "yourMessage":"Mesajınız",
+    "sendButton":"Gönder"
+  },
+  "footer": {
+    "copyright": "© 2025 Görkem Karagöl. Tüm hakları saklıdır."
+  },
+  "settings": {
+    "title": "Ayarlar",
+    "theme": "Tema",
+    "language": "Dil"
+  },
+  "theme": {
+    "light": "Açık",
+    "dark": "Koyu",
+    "system": "Sistem"
+  }
+}

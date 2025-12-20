@@ -1,14 +1,14 @@
 import { Github, Linkedin, Mail } from "lucide-react";
 import React from "react";
 
-const Footer = () => {
+const Footer = ({ dict }) => {
   return (
     <footer className="py-12 px-4 border-t border-border">
       <div className="container mx-auto max-w-6xl">
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="text-center md:text-left">
             <p className="text-muted-foreground">
-              © 2025 Görkem Karagöl. Tüm hakları saklıdır.
+              {dict.footer.copyright}
             </p>
           </div>
 

@@ -12,7 +12,7 @@ import {
 
 import { Button } from "@/components/ui/button";
 
-export function SettingsSidebar() {
+export function SettingsSidebar({ dict }) {
   return (
     <Sheet>
       <SheetTrigger asChild>
@@ -27,17 +27,17 @@ export function SettingsSidebar() {
 
       <SheetContent side="right" className="w-60">
         <SheetHeader>
-          <SheetTitle>Ayarlar</SheetTitle>
+          <SheetTitle>{dict.settings.title}</SheetTitle>
         </SheetHeader>
 
         
           <div className="flex flex-col gap-4 mt-4 px-8">
             <div className="flex items-center justify-between">
-              <span className="text-sm font-medium">Tema</span>
-              <ModeToggle />
+              <span className="text-sm font-medium">{dict.settings.theme}</span>
+              <ModeToggle dict={dict}/>
             </div>
             <div>
-                <span className="text-sm font-medium">Dil</span>
+                <span className="text-sm font-medium">{dict.settings.language}</span>
 
             </div>
           </div>

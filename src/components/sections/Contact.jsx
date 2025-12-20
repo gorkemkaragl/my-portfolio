@@ -5,21 +5,21 @@ import { Input } from '../ui/input'
 import { Textarea } from '../ui/textarea'
 import { Button } from '../ui/button'
 
-const Contact = () => {
+const Contact = ({dict}) => {
   return (
     <section id="contact" className="py-24 px-4 bg-secondary/30">
       <div className="container mx-auto max-w-6xl">
         <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center">
-          <span className="gradient-text">İletişim</span>
+          <span className="gradient-text">{dict.contact.title}</span>
         </h2>
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           <div className="space-y-6 animate-slide-in">
             <Card className="border-border">
               <CardHeader>
-                <CardTitle className="text-2xl mb-2">Benimle İletişime Geçin</CardTitle>
+                <CardTitle className="text-2xl mb-2">{dict.contact.contactMe}</CardTitle>
                 <CardDescription className="text-base">
-                  Projeleriniz için benimle çalışmak ister misiniz? Hemen iletişime geçin!
+                  {dict.contact.description}
                 </CardDescription>
               </CardHeader>
               <CardContent className="space-y-4">
@@ -29,7 +29,7 @@ const Contact = () => {
                 </div>
                 <div className="flex items-center gap-3 text-muted-foreground">
                   <Phone className="h-5 w-5 text-primary" />
-                  <span>+90 555 123 4567</span>
+                  <span>+90 541 273 80 22</span>
                 </div>
                 <div className="flex items-center gap-3 text-muted-foreground">
                   <MapPin className="h-5 w-5 text-primary" />
@@ -41,31 +41,31 @@ const Contact = () => {
           
           <Card className="border-border animate-fade-in">
             <CardHeader>
-              <CardTitle className="text-2xl">Mesaj Gönderin</CardTitle>
+              <CardTitle className="text-2xl">{dict.contact.messageMe}</CardTitle>
             </CardHeader>
             <CardContent>
               <form className="space-y-4">
                 <div>
                   <Input 
-                    placeholder="Adınız" 
+                    placeholder={dict.contact.name}
                     className="bg-background"
                   />
                 </div>
                 <div>
                   <Input 
                     type="email" 
-                    placeholder="E-posta Adresiniz" 
+                    placeholder={dict.contact.email} 
                     className="bg-background"
                   />
                 </div>
                 <div>
                   <Textarea 
-                    placeholder="Mesajınız" 
+                    placeholder={dict.contact.yourMessage}
                     className="min-h-[150px] bg-background"
                   />
                 </div>
                 <Button className="w-full hover-glow" size="lg">
-                  Gönder
+                  {dict.contact.sendButton}
                 </Button>
               </form>
             </CardContent>

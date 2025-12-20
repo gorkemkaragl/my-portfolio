@@ -1,0 +1,46 @@
+{
+  "hero": {
+    "welcome": "👋 Welcome",
+    "title": "Hi, I'm",
+    "description1": "I develop modern and user-friendly web applications.",
+    "description2":"Let's work together on amazing projects!",
+    "contact":"Contact Me",
+    "projects":"My Projects",
+    "cv":"Download my CV"
+  },
+  "about": {
+    "title": "About Me",
+    "description1": "Hi! I'm a passionate web developer. I develop web applications that prioritize user experience using modern technologies.",
+    "description2": "I enjoy working with React, TypeScript, and modern frontend technologies. I focus on creating the best solutions for each project and continuously improving my skills.",
+    "description3":"When I'm not coding, I learn about new technologies, contribute to open-source projects, and actively participate in technology communities."
+  },
+  "skills": {
+    "title": "Skills"
+  },
+  "projects": {
+    "title": "Projects"
+  },
+  "contact": {
+    "title": "Contact",
+    "contactMe": "Contact me",
+    "description":"Would you like to work with me on your projects? Contact me now!",
+    "messageMe":"Send Message",
+    "name":"Name",
+    "email":"Email address",
+    "yourMessage":"Message",
+    "sendButton":"Send"
+  },
+  "footer": {
+    "copyright": "© 2025 Gorkem Karagol. All rights reserved."
+  },
+  "settings": {
+    "title": "Settings",
+    "theme": "Theme",
+    "language": "Language"
+  },
+  "theme": {
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System"
+  }
+}
