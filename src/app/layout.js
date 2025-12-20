@@ -1,3 +1,4 @@
+// app/layout.jsx
 import { Geist, Geist_Mono, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import StickyCursor from "@/components/common/StickyCursor";
@@ -21,8 +22,8 @@ const spaceGrotesk = Space_Grotesk({
 
 export const metadata = {
   icons: {
-    icon: "/rocket.png", // public/ klasörüne koyduğun favicon dosyası
-    shortcut: "/rocket.png", // tarayıcı shortcut için
+    icon: "/rocket.png",
+    shortcut: "/rocket.png",
   },
   title: "Görkem Karagöl - Portfolio",
   description: "Görkem Karagöl'ün modern ve kullanıcı dostu portföy sitesi.",
@@ -30,7 +31,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html suppressHydrationWarning>
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${spaceGrotesk.variable} antialiased`}
       >

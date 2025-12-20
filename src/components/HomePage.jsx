@@ -1,27 +1,22 @@
 "use client";
 
-import {
-  Hero,
-  About,
-  Skills,
-  Projects,
-  Contact,
-} from "@/components/sections";
+import { Hero, About, Skills, Projects, Contact } from "@/components/sections";
 import React, { useEffect, useState } from "react";
 import Footer from "@/components/layout/Footer";
 import Lottie from "lottie-react";
 import loadingCat from "../../public/animations/loading-cat.json";
 import ScrollToTop from "@/components/common/ScrollToTop";
 import { SettingsSidebar } from "@/components/layout/SettingsSidebar";
+import { useLocale } from "../../context/LocaleContext";
 
+const HomePage = () => {
+  const { dict,lang } = useLocale();
+  console.log(lang)
 
-
-const HomePage = ({ dict }) => {
-
-  const [loading, setLoading] = useState(true);
+  /*const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const timer = setTimeout(() => setLoading(false), 2000);
+    const timer = setTimeout(() => setLoading(false), 1000);
     return () => clearTimeout(timer);
   }, []);
 
@@ -33,18 +28,18 @@ const HomePage = ({ dict }) => {
         </div>
       </div>
     );
-  }
+  }*/
 
   return (
     <div className="min-h-screen">
       <SettingsSidebar dict={dict} />
-      <Hero  dict={dict}/>
-      <About  dict={dict}/>
+      <Hero dict={dict} />
+      <About dict={dict} />
       <Skills dict={dict} />
       <Projects dict={dict} />
-      <Contact  dict={dict}/>
+      <Contact dict={dict} />
 
-      <Footer dict={dict}/>
+      <Footer dict={dict} />
       <ScrollToTop />
     </div>
   );

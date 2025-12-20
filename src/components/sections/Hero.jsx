@@ -31,7 +31,8 @@ const Hero = ({ dict }) => {
           <Image
             src="/myPhoto.png"
             alt="Görkem Avatar"
-            fill
+            width={250}
+            height={250}
             className="rounded-full object-cover border-4 border-white"
           />
         </div>

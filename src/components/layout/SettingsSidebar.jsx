@@ -11,6 +11,7 @@ import {
 } from "@/components/ui/sheet";
 
 import { Button } from "@/components/ui/button";
+import LanguageSwitcher from "../common/LanguageSwitcher";
 
 export function SettingsSidebar({ dict }) {
   return (
@@ -30,18 +31,18 @@ export function SettingsSidebar({ dict }) {
           <SheetTitle>{dict.settings.title}</SheetTitle>
         </SheetHeader>
 
-        
-          <div className="flex flex-col gap-4 mt-4 px-8">
-            <div className="flex items-center justify-between">
-              <span className="text-sm font-medium">{dict.settings.theme}</span>
-              <ModeToggle dict={dict}/>
-            </div>
-            <div>
-                <span className="text-sm font-medium">{dict.settings.language}</span>
-
-            </div>
+        <div className="flex flex-col gap-4 mt-4 px-8">
+          <div className="flex items-center justify-between">
+            <span className="text-sm font-medium">{dict.settings.theme}</span>
+            <ModeToggle dict={dict} />
           </div>
-        
+          <div className="flex items-center justify-between">
+            <span className="text-sm font-medium">
+              {dict.settings.language}
+            </span>
+            <LanguageSwitcher />
+          </div>
+        </div>
       </SheetContent>
     </Sheet>
   );
