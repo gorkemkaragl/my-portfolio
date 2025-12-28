@@ -12,7 +12,7 @@ import Image from "next/image";
 const Hero = ({ dict }) => {
   const handleDownloadCV = () => {
     const link = document.createElement("a");
-    link.href = "/CV2025.pdf";
+    link.href = "/CV-gorkem-karagol.pdf";
     link.download = "Ozgecmis.pdf";
     document.body.appendChild(link);
     link.click();

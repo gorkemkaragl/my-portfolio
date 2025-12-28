@@ -4,10 +4,26 @@ export const projects = [
     description:
       "Modern ve kullanıcı dostu bir e-ticaret web uygulaması. React ve TypeScript ile geliştirildi.",
     image: "./portfolio.png",
-    tags: ["TypeScript", "Next.js", "Tailwind CSS"],
+    tags: ["JavaScript", "Next.js", "Tailwind CSS", "i18n", "Framer Motion"],
     url: "https://github.com/gorkemkaragl/",
     demoURL: "https://gorkemkaragol.vercel.app",
   },
+  {
+    title: "Breaking Bad Pomodoro",
+    description:
+      "Breaking Bad temasından ilham alan, Pomodoro tekniğiyle odaklanmayı artıran modern bir zamanlayıcı uygulaması. Dinamik sahne geçişleri, ambiyans sesleri ve özelleştirilebilir ayarlarla verimli çalışma deneyimi sunar.",
+    image: "./",
+    tags: [
+      "TypeScript",
+      "Next.js",
+      "React",
+      "Tailwind CSS",
+      "Shadcn UI",
+    ],
+    url: "https://github.com/gorkemkaragl/my-pomodoro",
+    demoURL: "",
+  },
+
   {
     title: "Kur Takip - Döviz Kurları Uygulaması",
     description:
@@ -30,7 +46,7 @@ export const projects = [
     image: "./ford-otosan.png",
     tags: ["Python"],
     url: "https://github.com/gorkemkaragl/FordOtosan_Internship",
-    demoURL: "/",
+    demoURL: "https://github.com/gorkemkaragl/FordOtosan_Internship",
   },
   {
     title: "React Staj Mini Projeleri",
@@ -40,7 +56,7 @@ export const projects = [
       "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=800&h=600&fit=crop",
     tags: ["React", "Tailwind CSS", "Framer Motion"],
     url: "https://github.com/gorkemkaragl/React-Staj",
-    demoURL: "/",
+    demoURL: "https://github.com/gorkemkaragl/React-Staj",
   },
   {
     title: "Serender Nut House E-Ticaret Sitesi",
@@ -50,6 +66,6 @@ export const projects = [
       "https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=800&h=600&fit=crop",
     tags: ["React", "Tailwind.css", "Framer Motion"],
     url: "https://github.com/gorkemkaragl/serender-nut-house",
-    demoURL: "/",
+    demoURL: "https://github.com/gorkemkaragl/serender-nut-house",
   },
 ];
