@@ -43,6 +43,6 @@
 
 ```bash
 git clone https://github.com/gorkemkaragl/my-portfolio.git
-cd portfolio-site
+cd my-portfolio
 npm install
 npm run dev
