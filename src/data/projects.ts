@@ -12,7 +12,7 @@ export const projects = [
     title: "Breaking Bad Pomodoro",
     description:
       "Breaking Bad temasından ilham alan, Pomodoro tekniğiyle odaklanmayı artıran modern bir zamanlayıcı uygulaması. Dinamik sahne geçişleri, ambiyans sesleri ve özelleştirilebilir ayarlarla verimli çalışma deneyimi sunar.",
-    image: "./",
+    image: "./breakingBad.png",
     tags: [
       "TypeScript",
       "Next.js",
@@ -20,8 +20,8 @@ export const projects = [
       "Tailwind CSS",
       "Shadcn UI",
     ],
-    url: "https://github.com/gorkemkaragl/my-pomodoro",
-    demoURL: "",
+    url: "https://github.com/gorkemkaragl/breakingbad-pomodoro",
+    demoURL: "https://breakingbad-pomodoro.vercel.app",
   },
 
   {
