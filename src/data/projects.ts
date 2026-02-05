@@ -23,6 +23,21 @@ export const projects = [
     url: "https://github.com/gorkemkaragl/breakingbad-pomodoro",
     demoURL: "https://breakingbad-pomodoro.vercel.app",
   },
+    {
+    title: "Support Dashboard Next.js Uygulaması",
+    description:
+      "Next.js kullanılarak geliştirilmiş, kullanıcı dostu bir destek paneli uygulaması. Kullanıcıların destek taleplerini takip etmelerine ve yönetmelerine olanak tanır.",
+    image: "./supportdashboard.png",
+    tags: [
+      "TypeScript",
+      "Next.js",
+      "React",
+      "Tailwind CSS",
+      "Shadcn UI",
+    ],
+    url: "https://github.com/gorkemkaragl/support-dashboard-next",
+    demoURL: "https://support-dashboard-next.vercel.app",
+  },
 
   {
     title: "Kur Takip - Döviz Kurları Uygulaması",
