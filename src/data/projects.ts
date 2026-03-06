@@ -1,5 +1,15 @@
 export const projects = [
   {
+    title: "Serender Nut House E-Ticaret Sitesi",
+    description:
+      "Serender Nut House, kendimi geliştirmek için React kullanarak sıfırdan geliştirdiğim bir e-ticaret uygulamasıdır. Bu proje sayesinde hem front-end mimarisi üzerine pratik yapıyorum hem de gerçek bir e-ticaret akışını adım adım oluşturarak deneyim kazanıyorum.",
+    image:
+      "./serender.png",
+    tags: ["React", "Next.js", "Tailwind.css", "Framer Motion","Supabase"],
+    url: "https://github.com/gorkemkaragl/serender-ecommerce-next",
+    demoURL: "https://serender-ecommerce-next.vercel.app",
+  },
+  {
     title: "Kişisel Portfolyo Sitesi",
     description:
       "Modern ve kullanıcı dostu bir e-ticaret web uygulaması. React ve TypeScript ile geliştirildi.",
@@ -73,14 +83,5 @@ export const projects = [
     url: "https://github.com/gorkemkaragl/React-Staj",
     demoURL: "https://github.com/gorkemkaragl/React-Staj",
   },
-  {
-    title: "Serender Nut House E-Ticaret Sitesi",
-    description:
-      "Serender Nut House, kendimi geliştirmek için React kullanarak sıfırdan geliştirdiğim bir mini e-ticaret uygulamasıdır. Bu proje sayesinde hem front-end mimarisi üzerine pratik yapıyorum hem de gerçek bir e-ticaret akışını adım adım oluşturarak deneyim kazanıyorum.",
-    image:
-      "https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=800&h=600&fit=crop",
-    tags: ["React", "Tailwind.css", "Framer Motion"],
-    url: "https://github.com/gorkemkaragl/serender-nut-house",
-    demoURL: "https://github.com/gorkemkaragl/serender-nut-house",
-  },
+  
 ];
